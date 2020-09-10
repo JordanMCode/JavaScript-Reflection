@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"body {\r\n    width: 100%;\r\n    font-family: \"Courier New\", Courier, monospace;\r\n}\r\n\r\nh1 {\r\n    font-size: 42px;\r\n}\r\n\r\nheader {\r\n    width: 100%;\r\n    border-bottom: solid 2px grey;\r\n    margin-bottom: 25px;\r\n}\r\n\r\n.random-img {\r\n    max-width: 100%;\r\n    max-height: 70vh;\r\n    margin-bottom: 20px;\r\n}\r\n\r\nimg {\r\n    max-width: 100%;\r\n    max-height: 70vh;\r\n}\r\n\r\n.content-container {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    width: 80%;\r\n    text-align: center;\r\n}\r\n\r\n.invalid-warning {\r\n    display: none;\r\n}\r\n\r\nbutton,\r\ninput {\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    margin-top: 10px;\r\n}\r\n\r\n.assigned-gallery {\r\n    margin-top: 20px;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,iCAAiC;CACjD;;;AAED,AAAA,EAAE,CAAC;EACC,SAAS,EAAE,IAAI;CAClB;;;AAED,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,IAAI;EACX,aAAa,EAAE,cAAc;EAC7B,aAAa,EAAE,IAAI;CACtB;;;AAED,AAAA,WAAW,CAAC;EACR,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;CACtB;;;AAED,AAAA,GAAG,CAAC;EACA,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI;CACnB;;;AAED,AAAA,kBAAkB,CAAC;EACf,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,KAAK,EAAE,GAAG;EACV,UAAU,EAAE,MAAM;CACrB;;;AAED,AAAA,gBAAgB,CAAC;EACb,OAAO,EAAE,IAAI;CAChB;;;AAED,AAAA,MAAM;AACN,KAAK,CAAC;EACF,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,IAAI;CACnB;;;AAED,AAAA,iBAAiB,CAAC;EACd,UAAU,EAAE,IAAI;CACnB"
+}
