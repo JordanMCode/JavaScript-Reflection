@@ -1,4 +1,4 @@
-
+// require(['isomorphic-fetch']);
 // Variables
 
 // API //
@@ -18,7 +18,8 @@ let emailValue = "";
 
 // Functions // 
 
-//Fetches a random image from unsplash and appends it to the image container div.
+// Fetches a random image from unsplash and appends it to the image container div.
+
 function getImg() {
     fetch(unSplash)
         .then((response) => {
@@ -26,6 +27,8 @@ function getImg() {
             imgCon.innerHTML = `<img src="${responseURL}">`;
         })
 }
+
+
 
 // Hides the 'invalid email' warning message.
 function invalidEmailHide() {
