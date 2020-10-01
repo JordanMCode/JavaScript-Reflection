@@ -43,25 +43,19 @@ var emailValue = "";
 // }
 
 
-window.onload = function () {
-    $.getJSON(unSplash, {
-        format: "json"
-    })
-        .done(function (data) {
-            JSON.parse(data);
-            var JSON1 = JSON.parse(data);
-            console.log(JSON1);
-            $.each(data.items, function (i, item) {
-                $("<img>").attr("src", item.media.m).appendTo("#images");
-                if (i === 3) {
-                    return false;
-                }
-            });
-        });
+
+function getImage() {
+    $.ajax({
+        url: unSplash,
+        cache: false,
+        xhrFields: { responseType: "blob" },
+        success: function (data) {
+            var url = window.URL.createObjectURL(data);
+            responseURL = url;
+            imgCon.innerHTML = "<img src='" + url + "' alt='RandomImage'>";
+        },
+    });
 }
-
-
-
 
 
 // Hides the 'invalid email' warning message.
@@ -90,5 +84,5 @@ submit.addEventListener("click", function () {
 // Image Gen // 
 
 genImage.addEventListener("click", function () {
-    getImg();
+    getImage();
 });
